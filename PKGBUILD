@@ -10,7 +10,7 @@ _linuxprefix=linux-xanmod-lts
 _extramodules=$(find /usr/lib/modules -type d -iname 5.15.89*xanmod* | rev | cut -d "/" -f1 | rev)
 pkgname=$_linuxprefix-r8168
 _pkgname=r8168
-pkgver=470.161.03
+pkgver=8.050.03
 pkgrel=515891
 pkgdesc="A kernel module for Realtek 8168 network cards"
 url="http://www.realtek.com.tw"
@@ -21,7 +21,7 @@ makedepends=("$_linuxprefix-headers")
 provides=("$_pkgname=$pkgver")
 groups=("$_linuxprefix-extramodules")
 source=("https://github.com/mtorromeo/r8168/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=(SKIP)
+sha256sums=('76f9e7c26a8ade7b01dd34060f5b17d74387f15e9b6baa6dbba8c43634a31ce6')
 
 install=$_pkgname.install
 
