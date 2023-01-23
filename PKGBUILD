@@ -21,7 +21,7 @@ makedepends=("$_linuxprefix-headers")
 provides=("$_pkgname=$pkgver")
 groups=("$_linuxprefix-extramodules")
 source=("https://github.com/mtorromeo/r8168/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('76f9e7c26a8ade7b01dd34060f5b17d74387f15e9b6baa6dbba8c43634a31ce6')
+sha256sums=('SKIP')
 
 install=$_pkgname.install
 
