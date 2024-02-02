@@ -6,7 +6,7 @@
 # Filip <fila pruda com>, Det <nimetonmaili(at)gmail>
 
 _linuxprefix=linux-xanmod-lts
-_kernver=$(find /usr/lib/modules -type d -iname 6.1.76*xanmod* | rev | cut -d "/" -f1 | rev)
+_kernver="$(cat /usr/src/${_linuxprefix}/version)"
 pkgname=$_linuxprefix-r8168
 _pkgname=r8168
 pkgver=8.052.01
